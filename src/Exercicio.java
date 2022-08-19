@@ -1,24 +1,25 @@
-public class Exercicio {
+class Exercicio{
     public static void main(String[] args) {
-        int x =2;
-        int y = 3;
+        String str= "cat and*dogs-are-animals";
 
-        System.out.println((x + y / 4)==0 || (9/y*2) ==1);
-        System.out.println((x - y * 0)==0 && (y+2%3) ==3);
-        System.out.println((3.1415 * y-3) > (y*x-7));
+        String[] array = str.split(" |\\*|-");
+        System.out.println(array.length);
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        System.out.println(array[2]);
+        System.out.println(array[3]);
+        System.out.println(array[4]);
+        for (int i = 0; i < array.length; i++){
+            String primeiraLetra = array[i].substring(0, 1).toUpperCase();
+            String demaisLetras = array[i].substring(1).toLowerCase();
+            String palavraConcatenada = primeiraLetra + demaisLetras;
 
-
-
-
-        int numero = 1;
-        int soma = 0;
-
-        while (numero < 5){
-        soma = soma + numero;
-            numero = numero + 1;
+            array[i] = palavraConcatenada;
+            System.out.println(array[i]);
         }
-        System.out.println(soma);
+
 
     }
+
 
 }
