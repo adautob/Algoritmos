@@ -1,3 +1,9 @@
+
+/*      Desenvolve um programa para receber 2 conjuntos de caracteres e ao processar, deverá intercalar
+        o conjunto A com o inverso do conjunto B, mostrar a quantidade de números e outros caracteres, porém o conjunto A
+        não necessariamente terá a mesma quantidade de caracteres do conjunto B
+*/
+
 public class IntercalarStrings {
     public static void main(String[] args) {
         String conjuntoA = "R343rse$2we@";
