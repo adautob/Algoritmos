@@ -1,3 +1,7 @@
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
 class Exercicio{
     public static void main(String[] args) {
@@ -20,8 +24,11 @@ class Exercicio{
                 fraseCompleta += array[i];
 
 
+
+
         }
             System.out.println(fraseCompleta);
+
 
 
     }
