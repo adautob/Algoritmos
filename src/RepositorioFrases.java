@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class RepositorioFrases {
     public static void main(String[] args) {
@@ -21,19 +22,13 @@ public class RepositorioFrases {
         System.out.println("Agora digite uma palavra a ser pesquisada na lista: ");
         pesquisar = scanner.next();
 
-
-        for (String l : lista){
-
-            if (l.contains(pesquisar)){
-                resultadoPesquisa.add(l);
-            }
-        }
+        String finalPesquisar = pesquisar;
+        resultadoPesquisa = lista.stream().filter(p -> p.contains(finalPesquisar)).collect(Collectors.toList());
 
         System.out.println("Frases encontradas no repositório: ");
         System.out.println("-----------------------------------");
-        for (String l : resultadoPesquisa){
-            System.out.println("===>> "+l);
-        }
+
+        resultadoPesquisa.forEach(r -> System.out.println("==> "+r));
         System.out.println("-----------------------------------");
     }
 
