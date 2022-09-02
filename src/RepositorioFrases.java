@@ -20,7 +20,7 @@ public class RepositorioFrases {
         System.out.println("Frases encontradas no repositório: ");
         System.out.println("-----------------------------------");
         String finalPesquisar = pesquisar;
-        lista.stream().filter(p -> p.contains(finalPesquisar)).forEach(p -> System.out.println("==> "+p));
+        lista.stream().filter(p -> p.contains(finalPesquisar)).forEach(System.out::println);
         System.out.println("-----------------------------------");
 
     }
