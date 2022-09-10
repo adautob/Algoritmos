@@ -17,6 +17,7 @@ public class Calculo {
         double x = 0d;
 
         for (int i = 0; i < aux-1; i++){
+
             if (i == 0) {
                 x += (numero * (numero - 1)) / (i + 1);
                 numero--;
