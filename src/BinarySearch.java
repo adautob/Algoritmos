@@ -10,7 +10,10 @@ public class BinarySearch {
 
         int idx = Arrays.binarySearch(numeros, 10); // faz a busca binária
 
+        // imprime o index do numero encontrado
         System.out.println(idx);
+
+        // imprime a posicao 5 do array
         System.out.println(numeros[5]);
     }
 
