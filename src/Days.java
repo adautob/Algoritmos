@@ -1,4 +1,4 @@
-// progrma para converter o número total de dias em anos, meses, semanas e dias
+// programa para converter o número total de dias em anos, meses, semanas e dias
 
 public class Days {
     public static void main(String[] args) {
